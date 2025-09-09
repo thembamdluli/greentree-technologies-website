@@ -1,0 +1,25 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css"; // global styles
+const { title = "GreenTree Technologies" } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/public/images/logo.png" />
+    <title>{title}</title>
+    <script src="https://kit.fontawesome.com/64398a2b84.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <Navbar />
+
+    <main>
+      <slot />  <!-- ✅ This is where page content goes -->
+    </main>
+
+    <Footer />
+  </body>
+</html>

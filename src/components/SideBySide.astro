@@ -1,0 +1,151 @@
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1470">
+  <div class="cs-container">            
+    <div class="cs-content">
+      <h2 class="cs-title">20+ Years In IT And Business Consulting Have Taught Me This</h2>
+      <ul class="cs-ul">
+        <li class="cs-li"><i class="fas fa-check"></i> Work SMARTER, not HARDER</li>
+        <li class="cs-li"><i class="fas fa-check"></i> 10% of a successful business is worth more than 100% of a failing one</li>
+        <li class="cs-li"><i class="fas fa-check"></i> If you fail to plan, you plan to fail</li>
+        <li class="cs-li"><i class="fas fa-check"></i> Team work has far more benefits than risks.</li>
+        <li class="cs-li"><i class="fas fa-check"></i> Why bump your head yourself when you can learn from others who have already done so?</li>
+        <li class="cs-li"><i class="fas fa-check"></i> Keep your balance, don't spend your health to gain your wealth, only to spend your wealth to regain your health</li>
+        <li class="cs-li"><i class="fas fa-check"></i> Don't work for money, make money work for you.</li>
+      </ul>
+      <a href="" class="cs-button-solid">Our Services</a>
+    </div>
+
+    <!-- Image on the right -->
+    <div class="cs-image">
+      <img src="/images/20-years-exp.jpg" alt="20 years experience" loading="lazy" decoding="async" />
+    </div>
+  </div>
+</section>
+
+<style>
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-1470 {
+    padding: var(--sectionPadding);
+  }
+
+  #sbs-1470 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+
+  #sbs-1470 .cs-content {
+    text-align: left;
+    width: 100%;
+    max-width: 33.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #sbs-1470 .cs-title {
+    max-width: 20ch;
+  }
+
+  #sbs-1470 .cs-ul {
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  #sbs-1470 .cs-li {
+    font-size: var(--bodyFontSize);
+    font-weight: 700;
+    line-height: 1.5em;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /*Font Awesome check styling */
+  #sbs-1470 .cs-li i {
+    color: #0f1695;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  #sbs-1470 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    margin: 0;
+    padding: 0 3rem;
+    background-color: var(--primary);
+    overflow: hidden;
+    color: #fff;
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+  }
+
+  #sbs-1470 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: var(--headerColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+
+  #sbs-1470 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+
+  /* Image styling */
+  #sbs-1470 .cs-image img {
+    width: 100%;
+    max-width: 400px;
+    /*border-radius: 0rem;*/
+    object-fit: cover;
+    display: block;
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #sbs-1470 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #sbs-1470 .cs-content {
+    flex: 1;
+  }
+
+  #sbs-1470 .cs-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
+</style>
+
+<!-- Font Awesome (must include once in <head>) -->
+<script src="https://kit.fontawesome.com/64398a2b84.js" crossorigin="anonymous"></script>

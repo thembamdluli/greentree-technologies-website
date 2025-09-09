@@ -1,0 +1,116 @@
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbsr-2231">
+  <div class="cs-container" id="about">
+    <!-- Left Image -->
+    <div class="cs-image">
+      <img
+        loading="lazy"
+        decoding="async"
+        src="/public/images/logo-colour.png"
+        alt="colour logo"
+        width="272"
+        height="337"
+      />
+    </div>
+
+    <!-- Middle Text -->
+    <div class="cs-content">
+      <h2 class="cs-title">About GreenTree Technologies</h2>
+      <p class="cs-text">
+        Kenny Steyn established GreenTree Technologies in 2007 due to the need
+        for IT solutions to business problems, however it did not take long to
+        establish that many businesses were looking for IT solutions to address
+        a business problem. Kenny began to address business problems first, thus
+        eliminating vast amounts of unnecessary expenses on a solution that
+        would not really address the issue at hand. This then allowed for
+        additional budget to be used for IT to improve business thus making a
+        significant impact on the bottom line.<br /><br />
+        Kenny is an ordinary kind of guy with a very extraordinary way of
+        thinking and analyzing problems. After a coffee with him, you will come
+        away excited, energized, enthusiastic and encouraged. He has the ability
+        to make complex situations clearer and impossible situations, POSSIBLE.
+      </p>
+    </div>
+
+    <!-- Right Image -->
+    <div class="cs-image">
+      <img
+        loading="lazy"
+        decoding="async"
+        src="/public/images/kenny-steyn-photo.jpg"
+        alt="Kenny Steyn"
+        width="272"
+        height="337"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+/* Side By Side Reverse */
+@media only screen and (min-width: 0rem) {
+  #sbsr-2231 {
+    padding: var(--sectionPadding);
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+
+  #sbsr-2231 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #sbsr-2231 .cs-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #sbsr-2231 .cs-content {
+    text-align: center;
+    max-width: 36.625rem;
+  }
+
+  #sbsr-2231 .cs-title {
+    margin-bottom: 1rem;
+  }
+
+  #sbsr-2231 .cs-text {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Tablet and Up */
+@media only screen and (min-width: 48rem) {
+  #sbsr-2231 .cs-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  #sbsr-2231 .cs-content {
+    text-align: left;
+  }
+
+  #sbsr-2231 .cs-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  #sbsr-2231 .cs-content {
+    flex: 2;
+  }
+}
+</style>
